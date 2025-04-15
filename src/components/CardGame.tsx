@@ -1,3 +1,6 @@
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
+
 interface CardGameProps {
 	game: {
         name: string,
@@ -7,7 +10,7 @@ interface CardGameProps {
     
 
 
-function CardGame({ game }: CardJeuxProps) {
+function CardGame({ game }: CardGameProps) {
     console.log(game);
 	return (
         <>
