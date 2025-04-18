@@ -1,0 +1,25 @@
+.displayGame {
+	border: 2px solid #fba208;
+	border-radius: 8px;
+	box-shadow: 0 4px 8px rgba(255, 157, 0, 0.943);
+	overflow: hidden;
+	width: 300px;
+	text-align: center;
+	padding: 16px;
+	margin: 16px;
+	display: inline-block;
+	vertical-align: top;
+	background-color: #000000;
+}
+
+.displayGame h1 {
+	font-size: 1.5em;
+	margin: 12px 0;
+	color: #fba208;
+}
+
+.displayGame .carouselImage {
+	width: 100%;
+	height: auto;
+	border-radius: 4px;
+}
