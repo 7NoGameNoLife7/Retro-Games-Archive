@@ -1,12 +1,8 @@
-import styles from '../styles/cardGame.module.css'
-interface CardGameProps {
-	game: {
-        name: string,
-        background_image: string,
-    }
-}
-    
+import { Game } from '../types/game';
 
+interface CardGameProps {
+	game: Game
+}
 
 function CardGame({ game }: CardGameProps) {
     console.log(game);
@@ -14,7 +10,7 @@ function CardGame({ game }: CardGameProps) {
         <>
             <figure className="DisplayGame">  
                 <h1>{game.name}</h1>
-                <img className="Img" src={game.background_image} alt={game.name} />
+                <img className="carouselImage" src={game.background_image} alt={game.name} />
             </figure>
         </>
 	);

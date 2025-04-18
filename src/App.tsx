@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import Carousels from './components/Carousels';
+import './App.css'
  
 function App() {
     const [games, setGames] = useState([]);
@@ -23,9 +24,9 @@ function App() {
 
 
     return (
-        <div className="App">
+        <div className="mainContainer">
             <h1>kikou</h1>
-           <Carousels games={games}/>         
+            <Carousels games={games}/>         
         </div>
     );
 }
