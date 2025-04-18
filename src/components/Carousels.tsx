@@ -32,7 +32,11 @@ function Carousels({ games }: CarouselsProps) {
 			{games && games.length > 0 ? (
 				<Carousel responsive={responsive}>
 					{games.map((game, index) => (
-						<CardGame key={index} game={game} />
+						<CardGame
+							key={index}
+							game={game}
+							style={{ height: "auto", width: "200px" }}
+						/>
 						// <img className="carouselImage" src={game.background_image} alt={game.name} key={index} style={{height: "auto", width: "200px" }} />
 					))}
 				</Carousel>

@@ -1,5 +1,5 @@
 .displayGame {
-	border: 2px solid #fba208;
+	border: 2px solid var(--color-titrecard);
 	border-radius: 8px;
 	box-shadow: 0 4px 8px rgba(255, 157, 0, 0.943);
 	overflow: hidden;
@@ -15,7 +15,7 @@
 .displayGame h1 {
 	font-size: 1.5em;
 	margin: 12px 0;
-	color: #fba208;
+	color: var(--color-titrecard);
 }
 
 .displayGame .carouselImage {
