@@ -1,6 +1,4 @@
-import Carousel from 'react-multi-carousel';
-import 'react-multi-carousel/lib/styles.css';
-
+import styles from '../styles/cardGame.module.css'
 interface CardGameProps {
 	game: {
         name: string,
@@ -14,7 +12,6 @@ function CardGame({ game }: CardGameProps) {
     console.log(game);
 	return (
         <>
-
             <figure className="DisplayGame">  
                 <h1>{game.name}</h1>
                 <img className="Img" src={game.background_image} alt={game.name} />
