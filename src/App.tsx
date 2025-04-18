@@ -1,3 +1,6 @@
+
+import Footer from "./components/Footer";
+import Navbar from "./components/Navbar";
 import { useEffect, useState } from "react";
 import Carousels from "./components/Carousels";
 import "./App.css";
@@ -25,8 +28,10 @@ function App() {
 
 	return (
 		<div className="mainContainer">
+       <Navbar/> 
 			<h1>Suggestion</h1>
 			<Carousels games={games} />
+      <Footer/>
 		</div>
 	);
 }
