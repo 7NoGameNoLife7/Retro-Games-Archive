@@ -42,7 +42,11 @@
   height: 2rem;
   border-radius: 2rem;
   background-color: #f646b5;
-  
+  padding: 8px;
+}
+
+.navbarInput::placeholder {
+  color: rgb(0, 0, 0);
 }
 
 .navbarSearchContainer {
@@ -50,11 +54,11 @@
   justify-content: center;
 }
 
-.navbarSearchContainer, .navbarInputContainer {
+.navbarSearchContainer,
+.navbarInputContainer {
   display: flex;
   align-items: center;
 }
 .navbarInputContainer {
   width: 50%;
 }
-

@@ -1,12 +1,22 @@
-
-.footerLogo{
-    width: 15%;
-    max-width: 180px;
+.footerLogo {
+  width: 15%;
+  max-width: 100px;
+  min-width: 75px;
+ 
+  
 }
 
-.footer{
-    display: flex;
-    justify-content: flex-end;
-    gap: 1rem;
-    width: 100%;
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  width: 100%;
+  height: auto;
+  background-color: #011c45;
+  padding: 1rem;
+}
+.footerText{
+    color: whitesmoke
+    
 }
