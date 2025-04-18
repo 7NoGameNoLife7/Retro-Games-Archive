@@ -1,18 +1,23 @@
-import { Game } from '../types/game';
+import { Game } from "../types/game";
+import styles from "../styles/cardGame.module.css";
 
 interface CardGameProps {
-	game: Game
+	game: Game;
 }
 
 function CardGame({ game }: CardGameProps) {
-    console.log(game);
+	console.log(game);
 	return (
-        <>
-            <figure className="DisplayGame">  
-                <h1>{game.name}</h1>
-                <img className="carouselImage" src={game.background_image} alt={game.name} />
-            </figure>
-        </>
+		<>
+			<figure className={styles.displayGame}>
+				<h1>{game.name}</h1>
+				<img
+					className="carouselImage"
+					src={game.background_image}
+					alt={game.name}
+				/>
+			</figure>
+		</>
 	);
 }
 
