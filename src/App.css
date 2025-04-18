@@ -20,7 +20,8 @@
 	font-weight: 400;
 	--color-bg: linear-gradient(rgb(255, 255, 255), rgb(254, 205, 160));
 	--color-titrecard: #fba208;
-}
+	--color-inputBar: #f646b5;
+	}
 
 .mainContainer {
 	width: 100%;
