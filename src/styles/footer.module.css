@@ -1,0 +1,12 @@
+
+.footerLogo{
+    width: 15%;
+    max-width: 180px;
+}
+
+.footer{
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    width: 100%;
+}
