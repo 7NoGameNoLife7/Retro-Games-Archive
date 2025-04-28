@@ -4,20 +4,28 @@ import { Game } from "../types/game";
 import CardGame from "./CardGame";
 
 const responsive = {
-	superLargeDesktop: {
+	largeDesktop: {
 		breakpoint: { max: 4000, min: 3000 },
-		items: 5,
+		items: 6,
 	},
 	desktop: {
-		breakpoint: { max: 3000, min: 1024 },
-		items: 3,
+		breakpoint: { max: 3000, min: 1500 },
+		items: 5,
 	},
 	tablet: {
-		breakpoint: { max: 1024, min: 464 },
+		breakpoint: { max: 1500, min: 1200 },
+		items: 4,
+	},
+	tabletMini: {
+		breakpoint: { max: 1200, min: 900 },
+		items: 3,
+	},
+	phone: {
+		breakpoint: { max: 900, min: 600 },
 		items: 2,
 	},
-	mobile: {
-		breakpoint: { max: 464, min: 0 },
+	phoneMini: {
+		breakpoint: { max: 600, min: 0 },
 		items: 1,
 	},
 };
@@ -37,7 +45,6 @@ function Carousels({ games }: CarouselsProps) {
 							game={game}
 							style={{ height: "auto", width: "200px" }}
 						/>
-						// <img className="carouselImage" src={game.background_image} alt={game.name} key={index} style={{height: "auto", width: "200px" }} />
 					))}
 				</Carousel>
 			) : (
