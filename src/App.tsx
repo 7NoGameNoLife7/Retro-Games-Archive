@@ -1,20 +1,18 @@
-import { useState } from "react";
-import{ Link } from "react-router";
+import { Outlet } from "react-router";
 import "./App.css";
 
-import Accueil from "./pages/Accueil";
-import Favoris from "./pages/Favoris";
-import FicheGame from "./pages/FicheGame";
+// pages components
+import Footer from "./components/Footer";
+import Navbar from "./components/Navbar";
 
 function App() {
-  // const [currentLocation, setCurrentLocation] = useState("/");
   return (
     <>
-    <nav>
-      <Link to="/">Accueil</Link>
-      <Link to="/Favoris">Favoris</Link>
-    </nav>
-    <main>???</main>
+      <Navbar />
+      <main>
+        <Outlet />
+      </main>
+      <Footer />
     </>
   );
 }

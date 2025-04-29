@@ -1,51 +1,38 @@
-import { StrictMode } from 'react'
+import { StrictMode } from "react";
 
 import ReactDOM from "react-dom/client";
-import { createBrowserRouter,Link,RouterProvider } from 'react-router';
-import App from './App.tsx'
-import './index.css'
+import { createBrowserRouter, RouterProvider } from "react-router";
+import App from "./App.tsx";
+import "./index.css";
 
-import Accueil from './pages/Accueil.tsx';
-import Favoris from './pages/Favoris.tsx';
+import Accueil from "./pages/Accueil.tsx";
+import Favoris from "./pages/Favoris.tsx";
+import FicheGame from "./pages/FicheGame.tsx";
 
 //router creation
 const router = createBrowserRouter([
-    { 
+  {
+    element: <App />,
+    children: [
+      {
         path: "/",
-        element: (  
-            <>
-            <nav>
-                <Link to="/">Accueil</Link>
-                <Link to="/">Favoris</Link>
-            </nav>
-            <main>
-            <Accueil />
-            </main>
-            </>
-        ),
-    },
-    {
-      path: "/Favoris",
-      element: (
-        <>
-          <nav>
-            <Link to="/">Accueil</Link>
-            <Link to="/Favoris">Favoris</Link>
-          </nav>
-          <main>
-            <Favoris />
-          </main>
-        </>
-      ),
-    },
-  ]);
-  
-  // rendering
-  
-  const rootElement = document.getElementById("root");
-  
-  if (rootElement != null) {
-    ReactDOM.createRoot(rootElement).render(
-      <RouterProvider router={router} />
-    );
-  }
+        element: <Accueil />,
+      },
+      {
+        path: "/favoris",
+        element: <Favoris />,
+      },
+      {
+        path: "/game-details/:id",
+        element: <FicheGame />,
+      },
+    ],
+  },
+]);
+
+// rendering
+const rootElement = document.getElementById("root");
+
+if (rootElement != null) {
+  ReactDOM.createRoot(rootElement).render(<RouterProvider router={router} />);
+}

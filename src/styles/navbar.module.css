@@ -46,7 +46,8 @@
 }
 
 .navbarInput::placeholder {
-  color: rgb(0, 0, 0);
+  color: var(--placeholder-color)
+
 }
 
 .navbarSearchContainer {

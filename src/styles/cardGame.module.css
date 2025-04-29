@@ -1,7 +1,7 @@
 .displayGame {
 	border: 2px solid var(--color-titrecard);
 	border-radius: 8px;
-	box-shadow: 0 4px 8px rgba(5, 70, 87, 0.943); 
+	 
 	overflow: hidden;
 	width: 300px;
 	text-align: center;
@@ -10,12 +10,14 @@
 	display: inline-block;
 	vertical-align: top;
 	background: var(--color-displayGame-card);
+	box-shadow: var(--color-box-shadow-card);
 	}
 
 .displayGame h1 {
 	font-size: 1.5em;
 	margin: 12px 0;
 	color: var(--color-titrecard);
+	
 	}
 
 .displayGame .carouselImage {

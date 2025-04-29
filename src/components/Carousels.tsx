@@ -2,6 +2,7 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { Game } from "../types/game";
 import CardGame from "./CardGame";
+import { Link } from "react-router";
 
 const responsive = {
 	superLargeDesktop: {
@@ -32,11 +33,13 @@ function Carousels({ games }: CarouselsProps) {
 			{games && games.length > 0 ? (
 				<Carousel responsive={responsive}>
 					{games.map((game, index) => (
+						<Link to={`/game-details/${game.id}`}> 
 						<CardGame
 							key={index}
 							game={game}
 							style={{ height: "auto", width: "200px" }}
 						/>
+						</Link>
 						// <img className="carouselImage" src={game.background_image} alt={game.name} key={index} style={{height: "auto", width: "200px" }} />
 					))}
 				</Carousel>

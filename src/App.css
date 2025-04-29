@@ -17,9 +17,15 @@
   font-weight: 400;
   --color-bg: linear-gradient(rgb(255, 255, 255), rgb(248, 168, 93));
   --color-titrecard: #f887ff;
-  --color-inputBar: #f646b5;
+  --color-inputBar: #f646b3;
   --color-displayGame-card: #011c45;
   --color-carousel-boxS: 0 3px 9px rgb(168, 249, 252);
+  --color-box-shadow-card: 0 4px 8px rgba(5, 70, 87, 0.943); 
+  --color-h1: #de004e;
+  --color-footer: whitesmoke;
+  --background-color-footer: #011c45;
+  --placeholder-color: rgb(31, 2, 2);
+
 }
 
 .mainContainer {
@@ -35,7 +41,7 @@
 
 h1 {
   font-size: large;
-  color: #de004e;
+  color: var(--color-h1);
 }
 
 
