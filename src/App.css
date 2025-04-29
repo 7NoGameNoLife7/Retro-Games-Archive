@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Iceland&family=Wendy+One&display=swap");
+
 #root {
 	width: 100%;
 
@@ -19,7 +21,8 @@
 	line-height: 1.5;
 	font-weight: 400;
 	--color-bg: linear-gradient(rgb(255, 255, 255), rgb(254, 205, 160));
-	--color-titrecard: #fba208;
+	--color-titrecard: #f646b5;
+	--color-genretitle: #24b5c6;
 }
 
 .mainContainer {
@@ -27,10 +30,15 @@
 	max-width: 100vw;
 }
 
-.carouselImage {
-	max-width: 250px;
+.genretitle {
+	color: var(--color-genretitle);
+	text-align: left;
+	margin-left: 4rem;
+	margin-top: 2rem;
+	font-size: xx-large;
+	font-family: "Iceland", sans-serif;
 }
 
-h1 {
-	font-size: large;
+.carouselImage {
+	max-width: 250px;
 }
