@@ -1,7 +1,6 @@
 .displayGame {
 	border: 2px solid var(--color-titrecard);
 	border-radius: 20px;
-	box-shadow: 0 4px 8px rgba(248, 67, 200, 0.943);
 	overflow: hidden;
 	width: 320px;
 	height: 250px;
