@@ -1,6 +1,6 @@
 .displayGame {
 	border: 2px solid var(--color-titrecard);
-	border-radius: 8px;
+	border-radius: 20px;
 	box-shadow: 0 4px 8px rgba(248, 67, 200, 0.943);
 	overflow: hidden;
 	width: 320px;
@@ -40,13 +40,13 @@
 	color: var(--color-titrecard);
 }
 .starFull {
-	color: aqua;
+	color: var(--color-genretitle);
 	font-size: 1.6rem;
 	margin-left: 0.3rem;
 }
 
 .starEmpty {
-	color: aqua;
+	color: var(--color-genretitle);
 	font-size: 1.6rem;
 	margin-left: 0.3rem;
 }

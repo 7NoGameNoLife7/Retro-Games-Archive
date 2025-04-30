@@ -47,7 +47,8 @@
 	font-weight: 400;
 	--color-bg: linear-gradient(rgb(255, 255, 255), rgb(254, 205, 160));
 	--color-titrecard: #f646b5;
-	--color-genretitle: #24b5c6;
+	--color-genretitle: #17d8ed;
+
 }
 
 .mainContainer {
