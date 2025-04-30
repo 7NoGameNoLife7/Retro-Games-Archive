@@ -1,7 +1,6 @@
 .displayGame {
 	border: 2px solid var(--color-titrecard);
-	border-radius: 8px;
-	box-shadow: 0 4px 8px rgba(248, 67, 200, 0.943);
+	border-radius: 20px;
 	overflow: hidden;
 	width: 320px;
 	height: 250px;
@@ -10,8 +9,9 @@
 	margin: 20px;
 	display: inline-block;
 	vertical-align: top;
-	background-color: #011c45;
-}
+	background: var(--color-displayGame-card);
+	box-shadow: var(--color-box-shadow-card);
+	}
 
 .titleCard {
 	font-size: 1.5rem;
@@ -39,13 +39,13 @@
 	color: var(--color-titrecard);
 }
 .starFull {
-	color: aqua;
+	color: var(--color-genretitle);
 	font-size: 1.6rem;
 	margin-left: 0.3rem;
 }
 
 .starEmpty {
-	color: aqua;
+	color: var(--color-genretitle);
 	font-size: 1.6rem;
 	margin-left: 0.3rem;
 }

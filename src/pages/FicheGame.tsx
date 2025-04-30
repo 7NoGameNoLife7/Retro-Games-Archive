@@ -1,13 +1,9 @@
-import Footer from "../components/Footer";
-import Navbar from "../components/Navbar";
+import { useParams } from "react-router";
 
 function FicheGame() {
-	return (
-		<>
-			<Navbar />
-			<Footer />
-		</>
-	);
+   const{ id } = useParams();
+    return <h1>Hello from Fiche {id}</h1>;
+    
 }
 
 export default FicheGame;

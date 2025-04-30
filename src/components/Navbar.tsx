@@ -1,16 +1,24 @@
+import { Link } from "react-router";
 import styles from "./../styles/navbar.module.css";
 
 const Navbar = () => {
   return (
     <div className={styles.navContainer}>
-      <ul className={styles.linksContainer}>
-        <li className={`${styles.link} ${styles.linkHome}`}>
-          <img src="src/assets/images/home-svgrepo-com.svg" alt="" />
-        </li>
-        <li className={`${styles.link} ${styles.linkFavorite}`}>
-          <img src="src/assets/images/heart-svgrepo-com.svg" alt="" />
-        </li>
-      </ul>
+      <nav className={styles.linksContainer}>
+        <Link className={`${styles.link} ${styles.linkHome}`} to="/">
+          <img
+            src="src/assets/images/home-svgrepo-com.svg"
+            alt="lien vers la page Accueil"
+          />
+        </Link>
+        <Link className={`${styles.link} ${styles.linkFavorite}`} to="/favoris">
+          <img
+            src="src/assets/images/heart-svgrepo-com.svg"
+            alt="lien vers la page Favoris"
+          />
+        </Link>
+      </nav>
+
       <img
         className={styles.navbarLogo}
         src="src/assets/images/logov1.png"
@@ -30,8 +38,9 @@ const Navbar = () => {
             id="search"
             minLength={2}
             maxLength={12}
-            placeholder="Recherche" />
-          
+            placeholder="Recherche"
+          />
+
           <img
             src="src/assets/images/loupeV2-search-svgrepo-com.svg"
             alt=""
