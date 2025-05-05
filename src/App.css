@@ -23,7 +23,7 @@
   --color-displayGame-card: #011c45;
   --color-carousel-boxS: 0 3px 9px rgb(168, 249, 252);
   --color-box-shadow-card: 0 4px 8px rgba(5, 70, 87, 0.943); 
-  --color-h1: #de004e;
+  --color-h1: #f646b5;
   --color-footer: whitesmoke;
   --background-color-footer: #011c45;
   --placeholder-color: rgb(31, 2, 2);
@@ -63,6 +63,18 @@
 h1 {
   font-size: large;
   color: var(--color-h1);
+  border: 2px solid var(--color-titrecard);
+	border-radius: 20px;
+	overflow: hidden;
+	width: 320px;
+	height: 250px;
+	text-align: center;
+	padding: 5px;
+	margin: 20px;
+	display: inline-block;
+	vertical-align: top;
+	background: var(--color-displayGame-card);
+	box-shadow: var(--color-box-shadow-card);
 }
 
 

@@ -41,7 +41,7 @@ function Carousels({ games }: CarouselsProps) {
       {games && games.length > 0 ? (
         <Carousel responsive={responsive}>
           {games.map((game, index) => (
-            <Link to={`/game-details/${game.id}`}>
+            <Link to={`/game-details/${game.id}`}> 
               <CardGame
                 key={index}
                 game={game}
