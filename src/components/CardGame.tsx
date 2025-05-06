@@ -1,3 +1,4 @@
+import { useFavorites } from "../components/FavoritesContext";
 import { Game } from "../types/game";
 import styles from "../styles/cardGame.module.css";
 
@@ -5,8 +6,19 @@ interface CardGameProps {
 	game: Game;
 }
 
-function CardGame({ game }: CardGameProps) {
-	console.log("game", game)
+const CardGame = ({ game }: CardGameProps) => {
+	const { favorites, addToFavorites, removeFromFavorites } = useFavorites();
+	const isFavorite = favorites.some((favGame) => favGame.id === game.id);
+
+	const toggleFavorite = (event: React.MouseEvent<HTMLButtonElement>) => {
+		event.preventDefault();
+		if (isFavorite) {
+			removeFromFavorites(game.id);
+		} else {
+			addToFavorites(game);
+		}
+	};
+
 	const defaultImage = "src/assets/images/fail-1776388_640.webp";
 	const imageSrc = game.background_image ? game.background_image : defaultImage;
 
@@ -35,14 +47,17 @@ function CardGame({ game }: CardGameProps) {
 	);
 
 	return (
-		<>
-			<figure className={styles.displayGame}>
-				<h3 className={styles.titleCard}>{game.name}</h3>
-				<img className="carouselImage" src={imageSrc} alt={game.name} />
+		<figure className={styles.displayGame}>
+			<h3 className={styles.titleCard}>{game.name}</h3>
+			<img className="carouselImage" src={imageSrc} alt={game.name} />
+			<div className={styles.ratingContainer}>
 				<div className={styles.rating}>{starIcons}</div>
-			</figure>
-		</>
+				<button onClick={toggleFavorite} className={styles.favoriteButton}>
+					{isFavorite ? "❤" : "♡"}
+				</button>
+			</div>
+		</figure>
 	);
-}
+};
 
 export default CardGame;
