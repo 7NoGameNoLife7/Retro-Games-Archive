@@ -1,9 +1,11 @@
-import { useParams } from "react-router";
+import { useState } from "react";
+import { useLoaderData } from "react-router";
 
 function FicheGame() {
-   const{ id } = useParams();
-    return <h1>Hello from Fiche {id}</h1>;
-    
+  const game = useLoaderData() 
+ console.log("game", game) 
+  return <h1>Hello from Fiche</h1>;
+  <></>;
 }
 
 export default FicheGame;

@@ -1,10 +1,7 @@
-import Footer from "../components/Footer";
-import Navbar from "../components/Navbar";
-
 function Favoris() {
-  return <>
+  return <h1>Favoris</h1>;
+
   
-  </>;
 }
 
 export default Favoris;
