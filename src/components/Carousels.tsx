@@ -40,12 +40,12 @@ function Carousels({ games }: CarouselsProps) {
     <>
       {games && games.length > 0 ? (
         <Carousel responsive={responsive}>
-          {games.map((game, index) => (
+          {games.map((game) => (
             <Link to={`/game-details/${game.id}`}> 
               <CardGame
-                key={index}
+                key={game.id}
                 game={game}
-                style={{ height: "auto", width: "200px" }}
+                // style={{ height: "auto", width: "200px" }}
               />
             </Link>
           ))}

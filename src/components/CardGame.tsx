@@ -6,7 +6,6 @@ interface CardGameProps {
 }
 
 function CardGame({ game }: CardGameProps) {
-	console.log("game", game)
 	const defaultImage = "src/assets/images/fail-1776388_640.webp";
 	const imageSrc = game.background_image ? game.background_image : defaultImage;
 

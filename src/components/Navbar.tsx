@@ -1,5 +1,9 @@
 import { Link } from "react-router";
 import styles from "./../styles/navbar.module.css";
+import HomeIcon from "./../assets/images/home-svgrepo-com.svg";
+import Favorite from "./../assets/images/heart-svgrepo-com.svg";
+import RetroGameLogo from "./../assets/images/logov1.png";
+import PacMan from "./../assets/images/pacmanV1-svgrepo-com.svg";
 
 const Navbar = () => {
   return (
@@ -7,13 +11,13 @@ const Navbar = () => {
       <nav className={styles.linksContainer}>
         <Link className={`${styles.link} ${styles.linkHome}`} to="/">
           <img
-            src="src/assets/images/home-svgrepo-com.svg"
+            src={HomeIcon}
             alt="lien vers la page Accueil"
           />
         </Link>
         <Link className={`${styles.link} ${styles.linkFavorite}`} to="/favoris">
           <img
-            src="src/assets/images/heart-svgrepo-com.svg"
+            src={Favorite}
             alt="lien vers la page Favoris"
           />
         </Link>
@@ -21,13 +25,13 @@ const Navbar = () => {
 
       <img
         className={styles.navbarLogo}
-        src="src/assets/images/logov1.png"
+        src={RetroGameLogo}
         alt=""
       />
       <div className={styles.navbarSearchContainer}>
         <img
           className={styles.navbarPacman}
-          src="src/assets/images/pacmanV1-svgrepo-com.svg"
+          src={PacMan}
           alt=""
         />
         <div className={styles.navbarInputContainer}>

@@ -1,25 +1,21 @@
-import Footer from "../components/Footer";
-import Navbar from "../components/Navbar";
 import Carousels from "../components/Carousels";
 import "../App.css";
-import styles from "./styles/cardGame.module.css";
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { Genre } from "../types/genre";
 
 function Accueil() {
   const [games, setGames] = useState({});
   const API_KEY = import.meta.env.VITE_API_KEY;
-
-  const url = `https://api.rawg.io/api/games?key=${API_KEY}&dates=1950-01-01,2000-12-31&page_size=20&ordering=released&genres=`;
+    const url = `https://api.rawg.io/api/games?key=${API_KEY}&dates=1950-01-01,2000-12-31&page_size=20&ordering=released&genres=`;
 
   useEffect(() => {
-    const fetchGames = async (genre) => {
+    const fetchGames = async (genre: Genre ) => {
       try {
         const response = await fetch(`${url}${genre}`);
         const data = await response.json();
         setGames((prevGames) => ({
           ...prevGames,
-          [genre]: data.results.slice(0, 20), // Prendre les 5 premiers jeux
+          [genre]: data.results.slice(0, 20), // Prendre les 20 premiers jeux
         }));
       } catch (error) {
         console.error(
