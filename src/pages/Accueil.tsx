@@ -27,7 +27,7 @@ function Accueil() {
 
     // Fetch games for each genre
     for (const genre in Genre) {
-      fetchGames(Genre[genre as keyof typeof Genre]);
+      fetchGames(Genre[genre as keyof typeof Genre]); 
     }
   }, []);
 

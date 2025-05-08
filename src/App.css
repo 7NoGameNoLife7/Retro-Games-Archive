@@ -35,9 +35,9 @@
 	background: var(--color-bg);
 	font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
 	line-height: 1.5;
-	--color-bg: linear-gradient(rgb(255, 255, 255), rgb(254, 205, 160));
+	--color-bg: linear-gradient(rgb(249, 218, 151), rgb(255, 123, 0));
 	--color-titrecard: #f646b5;
-	--color-genretitle: #17d8ed;
+	--color-genretitle: #00ffff;
   --color-text: greenyellow;
 }
 main {

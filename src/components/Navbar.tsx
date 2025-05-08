@@ -4,16 +4,21 @@ import HomeIcon from "./../assets/images/home-svgrepo-com.svg";
 import Favorite from "./../assets/images/heart-svgrepo-com.svg";
 import RetroGameLogo from "./../assets/images/logov1.png";
 import PacMan from "./../assets/images/pacmanV1-svgrepo-com.svg";
+import ImageRetro from "./../assets/images/retroimgV3.png";
 
 const Navbar = () => {
   return (
     <div className={styles.navContainer}>
+         <img
+      className={styles.imageRetro}
+      src={ImageRetro} alt="image retro" />
       <nav className={styles.linksContainer}>
         <Link className={`${styles.link} ${styles.linkHome}`} to="/">
           <img
             src={HomeIcon}
             alt="lien vers la page Accueil"
           />
+          
         </Link>
         <Link className={`${styles.link} ${styles.linkFavorite}`} to="/favoris">
           <img
@@ -21,7 +26,7 @@ const Navbar = () => {
             alt="lien vers la page Favoris"
           />
         </Link>
-      </nav>
+    </nav>
 
       <img
         className={styles.navbarLogo}

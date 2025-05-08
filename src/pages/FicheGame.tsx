@@ -40,24 +40,22 @@ function FicheGame() {
         <div className="released">
           <h2>Date de sortie:</h2>
           <p>{game.released}</p>
+          {/* <div className={styles.devContainer}></div> */}
         </div>
         <div className={styles.descriptionContainer}>
           <h2>Description</h2>
           <p className="description">{game.description_raw}</p>
-        </div>
-        <div className={styles.devContainer}>
           <h2>Developpeur</h2>
           {game.developers.map((developer) => (
             <p key={developer.id}>{developer.name}</p>
           ))}
-        </div>
-        <div>
           <h2>Plateformes</h2>
           {game.platforms.map((platform) => (
             <p key={platform.platform.id}>{platform.platform.name}</p>
           ))}
         </div>
       </div>
+      <div className={styles.favoriteButton}></div>
     </>
   );
 }

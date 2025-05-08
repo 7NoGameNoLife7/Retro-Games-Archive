@@ -28,11 +28,17 @@ p {
 }
 
 .released{
+    text-align: left;
     padding: 7%;
 }
 
 h1{
     padding: 40px;
-    color: var(--color-genretitle)
+    color: var(--color-genretitle);
+    }
+
+h2{
+	text-align: left;
+	color: var(--color-titrecard);
 }
 

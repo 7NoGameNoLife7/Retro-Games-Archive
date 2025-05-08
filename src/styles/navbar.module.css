@@ -15,14 +15,16 @@
 
 .linksContainer {
   display: flex;
-  justify-content: flex-end;
-  gap: 1rem;
+  justify-content: center;
+  gap: 2rem;
   width: 100%;
+  margin-top: 11px;
 }
 
 .navbarLogo {
   width: 30%;
-  max-width: 170px;
+  max-width: 270px;
+  position: absolute;
 }
 .navbarPacman {
   width: 90px;
@@ -31,10 +33,10 @@
   left: 40px;
 }
 
-.navbarMagnify {
+.navbarMagnify{
   height: 1.5rem;
   position: relative;
-  right: 41px;
+  right: 35px;
 }
 
 .navbarInput {
@@ -47,7 +49,6 @@
 
 .navbarInput::placeholder {
   color: var(--placeholder-color)
-
 }
 
 .navbarSearchContainer {
@@ -64,3 +65,11 @@
   width: 50%;
 }
 
+.imageRetro{
+  width: 100%;
+  height: 350px;
+  box-shadow: var(--color-box-shadow-card);
+  position:static;
+  opacity: 0.90;
+
+}
