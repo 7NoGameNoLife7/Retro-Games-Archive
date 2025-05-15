@@ -45,7 +45,7 @@ function Carousels({ games }: CarouselsProps) {
               <CardGame
                 key={game.id}
                 game={game}
-                style={{ height: "auto", width: "200px" }}
+                // style={{ height: "auto", width: "200px" }}
               />
             </Link>
           ))}

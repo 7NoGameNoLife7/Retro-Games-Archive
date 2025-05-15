@@ -38,6 +38,7 @@ const Navbar = () => {
           className={styles.navbarPacman}
           src={PacMan}
           alt=""
+          
         />
         <div className={styles.navbarInputContainer}>
           <input

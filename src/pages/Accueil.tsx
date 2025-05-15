@@ -33,11 +33,14 @@ function Accueil() {
 
   return (
     <div className="mainContainer">
+      <h1>Nos Suggestions</h1>
       {Object.values(Genre).map((genre) => (
         <section key={genre}>
+         <div className="genreTilleContainer">
           <h2 className="genretitle">
             {genre.charAt(0).toUpperCase() + genre.slice(1)}
           </h2>
+          </div>
           <Carousels games={games[genre]} />
         </section>
       ))}

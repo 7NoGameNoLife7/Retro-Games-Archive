@@ -31,25 +31,26 @@ function FicheGame() {
 
   return (
     <>
-      <h1>{game.name}</h1>
+    <h1>Titre & Description</h1>
+      <h2>{game.name}</h2>
       <div className={styles.gameDetailImageContainer}>
         <img className={styles.imgGame} src={game.background_image} alt="" />
       </div>
       <div className={styles.rating}>{starIcons}</div>
       <div className={styles.gameDetailContainer}>
         <div className="released">
-          <h2>Date de sortie:</h2>
+          <h3>Date de sortie:</h3>
           <p>{game.released}</p>
-          {/* <div className={styles.devContainer}></div> */}
+          
         </div>
         <div className={styles.descriptionContainer}>
-          <h2>Description</h2>
+          <h3>Description</h3>
           <p className="description">{game.description_raw}</p>
-          <h2>Developpeur</h2>
+          <h3>Developpeur</h3>
           {game.developers.map((developer) => (
             <p key={developer.id}>{developer.name}</p>
           ))}
-          <h2>Plateformes</h2>
+          <h3>Plateformes</h3>
           {game.platforms.map((platform) => (
             <p key={platform.platform.id}>{platform.platform.name}</p>
           ))}

@@ -2,7 +2,6 @@
   background-color: var(--color-displayGame-card);
   display: flex;
   flex-direction: column;
-  align-items: center;
   width: 60%;
   justify-content: center;
   margin: auto;
@@ -13,10 +12,10 @@
   box-shadow: var(--color-box-shadow-card);
 }
 
-p {
-  text-align: left;
+p{
+   text-align: left;
    color: var(--color-text)
-}
+} 
 .starFull,.starEmpty{
     color: var(--color-genretitle);
     font-size: 2rem;
@@ -33,12 +32,27 @@ p {
 }
 
 h1{
-    padding: 40px;
-    color: var(--color-genretitle);
-    }
-
-h2{
-	text-align: left;
-	color: var(--color-titrecard);
+    margin: auto;
+    margin-top: 40px;
+    padding: 10px 20px;
+    font-size: 2rem;
+    border-radius: 20px;
+    border: 2px solid var(--color-titrecard);
+    box-shadow: var(--color-box-shadow-card);
+    display: inline-block;
+    
 }
 
+h2{
+	padding: 20px;
+    text-align: center;
+	/* color: var(--color-titrecard); */
+    color: var(--color-titrecard);
+    font-size: 3rem;
+}
+
+h3{
+    text-align: left;
+	color: var(--color-titrecard);
+
+}
