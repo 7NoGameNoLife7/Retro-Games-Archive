@@ -1,0 +1,75 @@
+.displayGame {
+  border: 2px solid var(--color-titrecard);
+  border-radius: 20px;
+  overflow: hidden;
+  width: 320px;
+  height: 250px;
+  text-align: center;
+  padding: 5px;
+  margin: 20px;
+  display: inline-block;
+  vertical-align: top;
+  background: var(--color-displayGame-card);
+  box-shadow: var(--color-box-shadow-card);
+}
+
+.titleCard {
+  font-size: 1.5rem;
+  margin: 0;
+  padding: 0.4rem;
+  color: var(--color-titrecard);
+  font-family: "Wendy One", sans-serif;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.displayGame .carouselImage {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.displayGame img {
+  width: 100%;
+  height: 60%;
+}
+
+.displayGame {
+  color: var(--color-titrecard);
+}
+
+.starFull,
+.starEmpty {
+  color: var(--color-genretitle);
+  font-size: 1.6rem;
+  margin-left: 0.3rem;
+}
+
+.rating {
+  display: flex;
+  gap: 0.3rem;
+}
+
+.ratingContainer {
+  display: flex;
+  align-items: flex-end;
+  gap: 6.5rem;
+}
+
+.favoriteButton {
+  background: none;
+  border: none;
+  font-size: 1.7rem;
+  color: var(--color-titrecard);
+}
+
+.favoriteButton:hover {
+  color: rgb(0, 200, 255);
+}
+
+.carouselImage {
+  max-width: 250px;
+  border-radius: 20px;
+  box-shadow: var(--color-carousel-boxS);
+}

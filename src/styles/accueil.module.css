@@ -1,0 +1,16 @@
+.mainContainer {
+  width: 100%;
+  max-width: 100vw;
+}
+
+.genreTitleContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  text-align: center;
+  font-family: "Iceland", sans-serif;
+}
+
+.genreTitle {
+  color: var(--background-color-footer);
+}
