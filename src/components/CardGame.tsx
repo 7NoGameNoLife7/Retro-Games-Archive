@@ -2,7 +2,6 @@ import { useFavorites } from "../components/FavoritesContext";
 import { Game } from "../types/game";
 import styles from "../styles/cardGame.module.css";
 
-
 interface CardGameProps {
   game: Game;
 }
@@ -57,7 +56,6 @@ const CardGame = ({ game }: CardGameProps) => {
           {isFavorite ? "❤" : "♡"}
         </button>
       </div>
-    
     </figure>
   );
 };

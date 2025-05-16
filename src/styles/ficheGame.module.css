@@ -7,52 +7,50 @@
   margin: auto;
   margin-bottom: 50px;
   border-radius: 20px;
-  padding: 20px 25px ;
+  padding: 20px 25px;
   border: 2px solid var(--color-titrecard);
   box-shadow: var(--color-box-shadow-card);
 }
 
-p{
-   text-align: left;
-   color: var(--color-text)
-} 
-.starFull,.starEmpty{
-    color: var(--color-genretitle);
-    font-size: 2rem;
+p {
+  text-align: left;
+  color: var(--color-text);
 }
-.imgGame{
-    border-radius: 20px;
-    border: 2px solid var(--color-titrecard);
-    box-shadow: var(--color-box-shadow-card);
+.starFull,
+.starEmpty {
+  color: var(--color-genretitle);
+  font-size: 2rem;
 }
-
-.released{
-    text-align: left;
-    padding: 7%;
+.imgGame {
+  border-radius: 20px;
+  border: 2px solid var(--color-titrecard);
+  box-shadow: var(--color-box-shadow-card);
 }
 
-h1{
-    margin: auto;
-    margin-top: 40px;
-    padding: 10px 20px;
-    font-size: 2rem;
-    border-radius: 20px;
-    border: 2px solid var(--color-titrecard);
-    box-shadow: var(--color-box-shadow-card);
-    display: inline-block;
-    
+.released {
+  text-align: left;
+  padding: 7%;
 }
 
-h2{
-	padding: 20px;
-    text-align: center;
-	/* color: var(--color-titrecard); */
-    color: var(--color-titrecard);
-    font-size: 3rem;
+h1 {
+  margin: auto;
+  margin-top: 40px;
+  padding: 10px 20px;
+  font-size: 2rem;
+  border-radius: 20px;
+  border: 2px solid var(--color-titrecard);
+  box-shadow: var(--color-box-shadow-card);
+  display: inline-block;
 }
 
-h3{
-    text-align: left;
-	color: var(--color-titrecard);
+h2 {
+  padding: 20px;
+  text-align: center;
+  color: var(--color-titrecard);
+  font-size: 3rem;
+}
 
+h3 {
+  text-align: left;
+  color: var(--color-titrecard);
 }

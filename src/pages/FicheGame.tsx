@@ -3,7 +3,6 @@ import styles from "./../styles/ficheGame.module.css";
 
 function FicheGame() {
   const game = useLoaderData();
-  console.log("game", game);
 
   const getStars = (rating: number) => {
     const maxStars = 5;
@@ -31,7 +30,7 @@ function FicheGame() {
 
   return (
     <>
-    <h1>Titre & Description</h1>
+      <h1>Titre & Description</h1>
       <h2>{game.name}</h2>
       <div className={styles.gameDetailImageContainer}>
         <img className={styles.imgGame} src={game.background_image} alt="" />
@@ -41,7 +40,6 @@ function FicheGame() {
         <div className="released">
           <h3>Date de sortie:</h3>
           <p>{game.released}</p>
-          
         </div>
         <div className={styles.descriptionContainer}>
           <h3>Description</h3>

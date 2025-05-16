@@ -1,0 +1,17 @@
+.favContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.favBody {
+  margin-top: 40px;
+}
+
+.gamePad {
+  width: 30%;
+}
+
+.nullFav {
+  display: flex;
+  flex-direction: column;
+}
